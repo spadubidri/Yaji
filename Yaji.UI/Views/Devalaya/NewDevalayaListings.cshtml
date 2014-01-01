@@ -1,0 +1,70 @@
+﻿@using Yaji.Common
+@model Yaji.UI.DevalayaSummaryListingModel
+       <div class="container">
+          <div class="page-header">
+            <h2>New listings </h2> <h6><a href ="/Devastana/">View All</a></h6>
+          </div>
+
+          <div class="row-fluid">
+            <ul class="thumbnails">
+
+@foreach (DevalayaSummary summary in Model.DevalayaListings)
+{
+    <li class="span2">
+                <div class="thumbnail">
+                  <img src="@summary.ThumbNailImage" />
+                  <div class="caption">
+                    <h3><a href="/Devalaya/Devalaya/ViewDetail/@summary.ID"> @summary.Name</a></h3>
+                    <p>
+                      @summary.ShortDescription
+                    </p>
+                                          <p>
+                        <a href="#"><i class="icon-star icon-white"></i>&nbsp;<b>Follow </b></a><br />
+                    </p>
+
+                  </div>
+                </div>
+              </li>
+}
+                </ul>
+              </div>
+   
+           <!--           
+              <li class="span4">
+                <div class="thumbnail">
+                  <img src="~/Content/img/krishna.jpg" />
+                  <div class="caption">
+                    <h3>Ranganatha Swamy - Melkote </h3>
+                    <p>
+                      Ranganatha swamy temple melkote 
+                    </p>
+                                          <p>
+                        <a href="#"><i class="icon-star icon-white"></i>&nbsp;<b>Follow </b></a><br />
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+              <li class="span4">
+                <div class="thumbnail">
+                    <img src="~/Content/img/krishna.jpg" />
+                  <div class="caption">
+                    <h3>Purusiddappa - Haveri</h3>
+                    <p>
+                      Details on purusidappa Haveri
+                    </p>
+                                          <p>
+                      <a href="#"><i class="icon-star icon-white"></i>&nbsp;<b>Follow </b></a><br />
+                    </p>
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+-->   
+    
+
+        </div>

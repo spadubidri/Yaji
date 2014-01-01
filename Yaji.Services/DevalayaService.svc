@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Yaji.Services.DevalayaService" CodeBehind="DevalayaService.svc.cs" %>

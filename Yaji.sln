@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yaji.UI", "Yaji.UI\Yaji.UI.csproj", "{A8628746-8963-4ED9-9DA1-F9A74C321E12}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C9725B9-1F47-47CB-A9CA-B14EBE02DBF3} = {5C9725B9-1F47-47CB-A9CA-B14EBE02DBF3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yaji.Runtime", "Yaji.Runtime\Yaji.Runtime.csproj", "{1E0B3EC9-12AC-4BC3-9CB2-064BB1C41F4F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C9725B9-1F47-47CB-A9CA-B14EBE02DBF3} = {5C9725B9-1F47-47CB-A9CA-B14EBE02DBF3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yaji.DB", "Yaji.DB\Yaji.DB.csproj", "{340B3C7E-FE01-472F-9EA2-111853EF8080}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yaji.Common", "Yaji.Common\Yaji.Common.csproj", "{9513366B-7C99-4D9B-8125-5852E38C25AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yaji.Services", "Yaji.Services\Yaji.Services.csproj", "{5C9725B9-1F47-47CB-A9CA-B14EBE02DBF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8628746-8963-4ED9-9DA1-F9A74C321E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8628746-8963-4ED9-9DA1-F9A74C321E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8628746-8963-4ED9-9DA1-F9A74C321E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8628746-8963-4ED9-9DA1-F9A74C321E12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E0B3EC9-12AC-4BC3-9CB2-064BB1C41F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E0B3EC9-12AC-4BC3-9CB2-064BB1C41F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E0B3EC9-12AC-4BC3-9CB2-064BB1C41F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E0B3EC9-12AC-4BC3-9CB2-064BB1C41F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340B3C7E-FE01-472F-9EA2-111853EF8080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340B3C7E-FE01-472F-9EA2-111853EF8080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340B3C7E-FE01-472F-9EA2-111853EF8080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340B3C7E-FE01-472F-9EA2-111853EF8080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9513366B-7C99-4D9B-8125-5852E38C25AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9513366B-7C99-4D9B-8125-5852E38C25AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9513366B-7C99-4D9B-8125-5852E38C25AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9513366B-7C99-4D9B-8125-5852E38C25AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C9725B9-1F47-47CB-A9CA-B14EBE02DBF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9725B9-1F47-47CB-A9CA-B14EBE02DBF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9725B9-1F47-47CB-A9CA-B14EBE02DBF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9725B9-1F47-47CB-A9CA-B14EBE02DBF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

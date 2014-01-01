@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Yaji - A Devotee center</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+         <link href="~/Content/bootstrap/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap responsive -->
+    <link href="~/Content/bootstrap/bootstrap-responsive.min.css" rel="stylesheet">
+    <!-- Font awesome - iconic font with IE7 support --> 
+    <link href="~/Content/bootstrap/font-awesome.css" rel="stylesheet">
+    <link href="~/Content/bootstrap/font-awesome-ie7.css" rel="stylesheet">
+    <!-- Bootbusiness theme -->
+    <link href="~/Content/bootstrap/boot-business.css" rel="stylesheet">
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+         <header>
+      <!-- Start: Navigation wrapper -->
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a href="/" class="brand brand-bootbus">
+                <img src="~/Content/img/logonew1.png" /></a>
+            <!-- Below button used for responsive navigation -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Start: Primary navigation -->
+            <div class="nav-collapse collapse">        
+                <ul class="nav pull-right">
+                <li><form class="form-search">
+              <div class="input-append">
+              <input type="text" class="span2 search-query" placeholder="Search posts">
+              <button type="submit" class="btn"><i class="icon-search"></i></button>
+              </div>
+            </form></li>
+                    
+                <li><a href="/Devotee/Register">Blogs</a></li>
+                   @if (@ViewBag.Title != "Login")
+                   {
+                        <li><a href="/Devotee/Register">Sign Up</a></li>
+                        <li><a href="/Devotee/MyView">Sign in</a></li>
+                    
+                   }else 
+                    {
+                           <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="~/Content/img/myphoto.jpg" />  <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-header">My Profile</li>
+                    <li class="nav-header">My Favorites</li>
+                      <li class="nav-header">Sign Out</li>
+                  </ul>                  
+                </li>
+
+                    
+                    }
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End: Navigation wrapper -->   
+    </header>
+        <div id="content">
+            @RenderSection("featured", required: false)
+            <section class="content">
+                @RenderBody()
+            </section>
+        </div>
+        
+
+
+        <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span2">
+            <h4><i class="icon-beaker icon-white"></i> About</h4>
+            <nav>
+              <ul class="quick-links">
+                <li><a href="our_works.html">Our mission</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="blog.html">Blog</a></li>
+              <ul>
+            </nav>          
+          </div>
+          <div class="span2">
+            <h4><i class="icon-thumbs-up icon-white"></i> Support</h4>
+            <nav>
+              <ul class="quick-links">
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact_us.html">Contact us</a></li>            
+              </ul>
+            </nav>
+          </div>
+          <div class="span3">
+            <h4>Get in touch</h4>
+            <div class="social-icons-row">
+              <a href="#"><i class="icon-twitter"></i></a>
+              <a href="#"><i class="icon-facebook"></i></a>
+            </div>
+          </div>      
+          <div class="span3">
+            <h4>Subscribe to Yajinah.in Newsletter</h4>
+            <form>
+              <input type="text" name="email" placeholder="Email address">
+              <input type="submit" class="btn btn-primary" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <p>
+          &copy; 2013 Yaji.co.in, All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+
+         <script type="text/javascript" src="~/Content/js/jquery.min.js"></script>
+        <script type="text/javascript" src="~/Content/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="~/Content/js/boot-business.js"></script>
+        <script type="text/javascript" src="~/Content/js/common.js"></script>
+        
+    </body>
+</html>

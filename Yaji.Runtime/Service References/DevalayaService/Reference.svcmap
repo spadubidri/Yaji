@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f4ca8bd3-b7f3-45fa-83cb-073f5348d162" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:58666/DevalayaService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DevalayaService.xsd" MetadataType="Schema" ID="0e460544-07a1-46c4-9edd-10fb6d34c40e" SourceId="1" SourceUrl="http://localhost:58666/DevalayaService.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="04589afe-6640-4737-87f1-a3074133ae46" SourceId="1" SourceUrl="http://localhost:58666/DevalayaService.svc?wsdl" />
+    <MetadataFile FileName="DevalayaService1.xsd" MetadataType="Schema" ID="c9b2564e-a768-4883-b2ba-397d6e4af1b6" SourceId="1" SourceUrl="http://localhost:58666/DevalayaService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DevalayaService2.xsd" MetadataType="Schema" ID="98ce95a5-abc0-4765-8682-8b41d8963dcd" SourceId="1" SourceUrl="http://localhost:58666/DevalayaService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DevalayaService.disco" MetadataType="Disco" ID="d61015fd-8b20-411b-bffe-5ccd97af6450" SourceId="1" SourceUrl="http://localhost:58666/DevalayaService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
